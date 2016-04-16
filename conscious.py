@@ -82,29 +82,6 @@ def main(argv):
 		print "----------"
 	print frequencies
 
-#		print image.get_probs()
-
-
-
-'''
-			tagnames = tags['results'][0]['result']['tag']['classes']
-			for tag in tagnames:
-				tag = str(tag)
-				if tag in database:
-					database[tag] += 1
-				else:
-					database[tag] = 1
-
-	keys = database.keys()
-	values = database.values()
-
-	fig = plt.figure()
-
-	ax = plt.subplot(111)
-	ax.bar(range(0, 40 * len(values), 40), values, width=30)
-	plt.show()
-'''
-
 def parse_extension(filename):
 	split_filename = filename.split(".")
 	extension = split_filename[len(split_filename) - 1]
